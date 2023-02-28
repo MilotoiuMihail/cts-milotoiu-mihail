@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Mihail
+ *
+ */
+module Seminare {
+}
