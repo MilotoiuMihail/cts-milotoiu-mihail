@@ -13,18 +13,18 @@ public class ReaderElev extends ReaderAplicant {
 
 	@Override
 	public List<Aplicant> readAplicants(String file) throws FileNotFoundException {
-		Scanner input2 = new Scanner(new File(file));
-		input2.useDelimiter(",|\n");
+		Scanner input = new Scanner(new File(file));
+		input.useDelimiter(",|\n");
 		List<Aplicant> elevi = new ArrayList<Aplicant>();
 
-		while (input2.hasNext()) {
+		while (input.hasNext()) {
 			Elev elev = new Elev();
-			elev.setClasa(input2.nextInt());
-			elev.setTutore(input2.next());
+			elev.setClasa(input.nextInt());
+			elev.setTutore(input.next());
 			elevi.add(elev);
 		}
 
-		input2.close();
+		input.close();
 		return elevi;
 	}
 

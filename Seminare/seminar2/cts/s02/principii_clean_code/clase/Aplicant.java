@@ -8,7 +8,7 @@ public abstract class Aplicant {
 	protected int varsta;
 	protected int punctaj;
 	protected int nr_proiecte;
-	protected String[] denumireProiect;
+	protected String[] denumireProiecte;
 	private static int pragAcceptare = 80;
 
 	public String getNume() {
@@ -48,10 +48,10 @@ public abstract class Aplicant {
 		this.punctaj = punctaj;
 	}
 
-	public void setDenumireProiect(String[] denumireProiect) {
-		this.denumireProiect = new String[this.nr_proiecte];
+	public void setDenumireProiecte(String[] denumireProiecte) {
+		this.denumireProiecte = new String[this.nr_proiecte];
 		for (int i = 0; i < this.nr_proiecte; i++) {
-			this.denumireProiect[i] = denumireProiect[i];
+			this.denumireProiecte[i] = denumireProiecte[i];
 		}
 	}
 
@@ -60,14 +60,14 @@ public abstract class Aplicant {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiecte) {
 		super();
 		this.nume = nume;
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
 		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
+		this.denumireProiecte = denumireProiecte;
 	}
 
 	public int getNr_proiecte() {
@@ -89,7 +89,7 @@ public abstract class Aplicant {
 	public String toString() {
 		return "Nume=" + this.nume + ", Prenume=" + this.prenume + ", Varsta=" + this.varsta + ", Punctaj="
 				+ this.punctaj + ", Nr_proiecte=" + this.nr_proiecte + ", DenumireProiect="
-				+ Arrays.toString(this.denumireProiect);
+				+ Arrays.toString(this.denumireProiecte);
 	}
 
 }
