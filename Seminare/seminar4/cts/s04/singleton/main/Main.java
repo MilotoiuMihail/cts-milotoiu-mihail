@@ -1,0 +1,21 @@
+package cts.s04.singleton.main;
+
+import cts.s04.singleton.Director;
+import cts.s04.singleton.Papa;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Papa papa1 = Papa.getInstance();
+		Papa papa2 = Papa.getInstance();
+		System.out.println(papa1);
+		System.out.println(papa2);
+		
+		Director director1=Director.getInstance("Victor");
+		Director director2=Director.getInstance("Stefan");
+		System.out.println(director1.toString());
+		System.out.println(director2.toString());
+	}
+
+}
